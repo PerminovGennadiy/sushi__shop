@@ -45,6 +45,6 @@ function calcCartPriceAndDelivery() {
     } else {
         deliveryCost.classList.remove('free');
         deliveryCost.innerText = '299 ₽';
-        cartFreeDelivry.classList.remove('free');
+        cartFreeDelivry.classList.remove('none');
     }
 }
