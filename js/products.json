@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"title": "Филадельфия хит ролл",
+		"itemsInBox": 6,
+		"weight": 180,
+		"price": 300,
+		"imgSrc": "philadelphia.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Калифорния темпура",
+		"itemsInBox": 8,
+		"weight": 205,
+		"price": 250,
+		"imgSrc": "california-tempura.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Запеченый ролл «Калифорния»",
+		"itemsInBox": 6,
+		"weight": 182,
+		"price": 230,
+		"imgSrc": "zapech-california.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Филадельфия",
+		"itemsInBox": 6,
+		"weight": 230,
+		"price": 320,
+		"imgSrc": "philadelphia.jpg"
+	},
+    {
+		"id": 5,
+		"title": "Красный дракон",
+		"itemsInBox": 8,
+		"weight": 250,
+		"price": 420,
+		"imgSrc": "krasnyj-drakon.jpg"
+	},
+    {
+		"id": 6,
+		"title": "Маки с крабовым кремом",
+		"itemsInBox": 8,
+		"weight": 230,
+		"price": 360,
+		"imgSrc": "maki-inside-krab-krem.jpg"
+	},
+    {
+		"id": 7,
+		"title": "Кейзай чикен",
+		"itemsInBox": 8,
+		"weight": 270,
+		"price": 390,
+		"imgSrc": "kejzaj-chiken.jpg"
+	},
+    {
+		"id": 8,
+		"title": "Фурацу тюна",
+		"itemsInBox": 8,
+		"weight": 290,
+		"price": 299,
+		"imgSrc": "furatsu-tuna.jpg"
+	}
+]
