@@ -43,4 +43,14 @@ window.addEventListener('click', function (e) {
     if (e.target.hasAttribute('data-action') && e.target.closest('.cart-wrapper')) {
         calcCartPriceAndDelivery();
     }
+
+    
+
+    if (e.target.querySelectorAll('.icon-xmark')) {
+        e.target.closest('.cart-item').remove();
+        toggleCartStatus();
+        calcCartPriceAndDelivery();
+    }
+
+    
 });

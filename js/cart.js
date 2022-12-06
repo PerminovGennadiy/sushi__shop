@@ -39,7 +39,10 @@ window.addEventListener('click', function (e) {
                                         </div>
                                         <div class="cart-item__desc">
                                             <div class="cart-item__title">${productInfo.title}</div>
-                                            <div class="cart-item__weight">${productInfo.itemsInBox} / ${productInfo.weight}</div>
+                                            <div class="weight-xmark">
+                                                <div class="cart-item__weight">${productInfo.itemsInBox} / ${productInfo.weight}</div>
+                                                <img class='icon-xmark' style="height: 30px; width: 30px;" src="./img/icons/xmark-solid.svg" alt="">
+                                            </div>
                                             <!-- cart-item__details -->
                                             <div class="cart-item__details">
                                                 <div class="items items--small counter-wrapper">
@@ -63,10 +66,12 @@ window.addEventListener('click', function (e) {
         // Сбрасываем значение счётчика до 1, когда пользователь добавил товар в корзину
         card.querySelector('[data-counter]').innerText = '1';
 
-        // Отображение, есть ли товар в корзине или нет
-        toggleCartStatus();
+        
 
         // Высчитываем сумму товаров в корзине
         calcCartPriceAndDelivery();
+
+        // Отображение, есть ли товар в корзине или нет
+        toggleCartStatus();
     }
 });

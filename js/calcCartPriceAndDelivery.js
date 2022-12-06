@@ -24,9 +24,6 @@ function calcCartPriceAndDelivery() {
         priceTotal += parseInt(item.innerText) * parseInt(amountEl.innerText);
     });
 
-    // Отображаем цену на странице
-    totalPriceEl.innerText = priceTotal;
-
     // Скрывем / показываем блок со стоимостью доставки
     if (priceTotal > 0) {
         cartDelivery.classList.remove('none');
@@ -42,9 +39,17 @@ function calcCartPriceAndDelivery() {
         deliveryCost.innerText = 'Бесплатно';
         // Убираем надпись "Бесплатная дсотавка от 699 руб."
         cartFreeDelivry.classList.add('none');
+    } else if (priceTotal <= 0) {
+        priceTotal = 0;
     } else {
         deliveryCost.classList.remove('free');
         deliveryCost.innerText = '299 ₽';
         cartFreeDelivry.classList.remove('none');
+        priceTotal += 299;
     }
+    
+
+    // Отображаем цену на странице
+    totalPriceEl.innerText = priceTotal; 
+
 }

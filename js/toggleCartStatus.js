@@ -10,6 +10,7 @@ function toggleCartStatus() {
     // Оформить заказ 
     const orderForm = document.querySelector('#order-form');
 
+
     // Возвращает коллекцию дочерних элементов у корзины (cartWrapper.children). Возвращает количетсво дочерних элеметов (cartWrapper.children.length)
     if (cartWrapper.children.length > 0) {
         cartEmptyBadge.classList.add('none');
