@@ -46,11 +46,9 @@ window.addEventListener('click', function (e) {
 
     
 
-    if (e.target.querySelectorAll('.icon-xmark')) {
+    if (e.target.className == 'icon-xmark') {
         e.target.closest('.cart-item').remove();
         toggleCartStatus();
         calcCartPriceAndDelivery();
     }
-
-    
 });
